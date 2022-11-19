@@ -16,8 +16,8 @@ from pyrogram.types import ReplyKeyboardMarkup
 if MY_PASS:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","login🔑","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["Start⚡️","Help📚","Login🔑","DC"],
+                ["Follow❤️","Ping📡","Status📊","Maintainers😎"]
                         
             ],
             resize_keyboard=True
@@ -25,8 +25,8 @@ if MY_PASS:
 else:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["Start⚡️","Help📚","DC"],
+                ["Follow❤️","Ping📡","Status📊","Maintainers😎"]
                         
             ],
             resize_keyboard=True
@@ -87,7 +87,7 @@ async def help_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ **\n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{message.from_user.first_name}](tg://user?id={message.from_user.id}) __Started Your Bot !!__"
+            f"**#NᴇᴡUsᴇʀ Jᴏɪɴᴇᴅ **\n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{message.from_user.first_name}](tg://user?id={message.from_user.id}) __Started Your Bot !!__"
         )
     if Var.UPDATES_CHANNEL != "None":
         try:
