@@ -12,7 +12,7 @@ class Var(object):
     API_ID = int(getenv('API_ID', '2229357'))
     API_HASH = str(getenv('API_HASH', '31f183a5a075fd4996cb8ad59e7b794f'))
     BOT_TOKEN = str(getenv('BOT_TOKEN', '5901953440:AAFCTtag64hVhJuAQAeDf07vlLxw1-_g07c'))
-    name = str(getenv('name', 'filetolinkbot'))
+    name = str(getenv('name', 'FileToLinkGenerator'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001220378004'))
@@ -22,7 +22,7 @@ class Var(object):
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "794968418").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'kkaru'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
@@ -35,6 +35,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL'))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://AutoFilter:Karuna15122000@cluster0.qumeb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
