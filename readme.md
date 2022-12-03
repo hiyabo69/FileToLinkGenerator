@@ -42,6 +42,8 @@
 <details>
   <summary><b>Deploy on Heroku:</b></summary>
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/karunatg/nataliya)
+
 
 1. Fork This Repo
 2. Click on the button to Deploy and follow steps
