@@ -30,8 +30,8 @@ class Var(object):
     
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN', appalling-lulu-filelinkbot.koyeb.app)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-    HAS_SSL=bool(getenv('HAS_SSL',True))
+    FQDN = str(getenv('FQDN', 'appalling-lulu-filelinkbot.koyeb.app')) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
+    HAS_SSL=bool(getenv('HAS_SSL', 'True'))
     if HAS_SSL:
         URL = "https://{}/".format(FQDN)
     else:
