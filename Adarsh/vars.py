@@ -11,7 +11,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', '2229357'))
     API_HASH = str(getenv('API_HASH', '31f183a5a075fd4996cb8ad59e7b794f'))
-    SHORT_URL = str(getenv('SHORT_URL', 'FyuB'))
+    SHORT_URL = str(getenv('SHORT_URL', 'JHgb7sW'))
     BOT_TOKEN = str(getenv('BOT_TOKEN', '5901953440:AAFCTtag64hVhJuAQAeDf07vlLxw1-_g07c'))
     name = str(getenv('name', 'FileToLinkGenerator'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
@@ -37,5 +37,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://AutoFilter:Karuna15122000@cluster0.qumeb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'dniendhs'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'wj28jehw'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split())) 
