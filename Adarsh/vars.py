@@ -13,7 +13,7 @@ class Var(object):
     API_HASH = str(getenv('API_HASH', '31f183a5a075fd4996cb8ad59e7b794f'))
     SHORT_URL = str(getenv('SHORT_URL', 'i5YV1n95'))
     BOT_TOKEN = str(getenv('BOT_TOKEN', '5901953440:AAFCTtag64hVhJuAQAeDf07vlLxw1-_g07c'))
-    name = str(getenv('name', 'FileToLinkGenerator'))
+    name = str(getenv('name', 'tvseriescw'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001220378004'))
